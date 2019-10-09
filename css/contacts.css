@@ -1,0 +1,15 @@
+.person {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.carousel {
+		margin: 0;
+	}
+}

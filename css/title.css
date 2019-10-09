@@ -1,0 +1,171 @@
+.content, .container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/** bg **/
+.bg img {
+  width: 100%;
+}
+
+.bg .text {
+  height: 100px;
+  color: orange;
+  font-weight: bold;
+  line-height: 8px;
+  margin-top: -50px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+}
+
+.bg .text .title {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.bg .text .subtitle {
+  font-size: 25px;
+}
+/** info **/
+.info {
+  background-color: #e9f5ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+}
+
+.about {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.about hr, .plus hr {
+  background-color: orange;
+  border: none;
+  color: orange;
+  height: 2px;
+}
+
+.about .title {
+  font-size: 25px;
+}
+
+.pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plus {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 1px gray;
+          box-shadow: 2px 2px 1px gray;
+  display: inline-block;
+  float: right;
+  height: 230px;
+  margin: 30px auto;
+  padding: 25px;
+  width: 230px;
+}
+
+.plus img {
+  float: right;
+}
+
+.plus hr {
+  margin-bottom: 15px;
+}
+
+.plus .title {
+  font-weight: bold;
+  height: 64px;
+  width: 125px;
+}
+/** services **/
+.service {
+  padding: 30px 20%;
+  text-align: justify;
+  min-height:  265px;
+}
+
+.service img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .bg .text {
+    line-height: 3px;
+  }
+
+  .bg .text .title {
+    font-size: 35px;
+  }
+
+  .bg .text .subtitle {
+    font-size: 20px;
+  }
+
+  .info {
+    display: block;
+  }
+
+  .service {
+    padding: 30px 10%;
+  }
+
+  .pair {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg .text {
+    line-height: 30px;
+  }
+
+  .bg .text .title {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .bg .text .subtitle {
+    font-size: 15px;
+  }
+
+  .info {
+    display: block;
+    padding: 50px 20px;
+  }
+
+  .plus {
+    margin: 5px auto;
+    width: 100%;
+  }
+
+  .service {
+    padding: 30px 8%;
+  }
+
+  .service img {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}

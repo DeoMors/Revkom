@@ -1,0 +1,53 @@
+.description {
+  font-size: 15px;
+  margin: 0 auto 80px;
+  overflow: hidden;
+  text-align: justify;
+  padding: 5px;
+}
+
+.description ul {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.description li {
+  list-style-type: none;
+  padding-top: 5px;
+  margin-left: -20px;
+}
+
+.description-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.center {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.left, .right {
+  width: 45%;
+  margin-bottom: 15px;
+}
+
+.left {
+  margin-right: 40px;
+  float: left;
+}
+
+.right {
+  margin-left: 20px;
+  float: right;
+}
+
+
+@media screen and (max-width: 768px) {
+  .left, .right {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+    width: 100%;
+  }
+}
